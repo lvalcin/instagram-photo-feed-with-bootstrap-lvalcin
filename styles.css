@@ -2,5 +2,17 @@
     width: 30px;
     height:30px;
 }
-
-    
+.btn-group {
+    margin-right: 80px;
+  }
+.navbar-brand{
+    margin-left:60px;
+}
+.dropdown-item-red{
+    color:red;
+    margin-left:20px;
+}
+.square-button{
+    height: 15px;
+    border:0;
+}
