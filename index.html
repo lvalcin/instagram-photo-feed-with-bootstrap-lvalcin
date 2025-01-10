@@ -5,27 +5,38 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=settings" />
     <title>Instagram Photo Feed With Bootstrap by Lov </title>
 </head>
 <body>
-    <nav class="navbar bg-body-tertiary">
-        <div class="container-fluid">
-          <a class="navbar-brand" href="#">
-            <img src="/docs/5.3/assets/brand/bootstrap-logo.svg" alt="Logo" width="30" height="24" class="d-inline-block align-text-top">
-            Bootstrap
-          </a>
+    <div class="container-fluid"> 
+      <div class="row">
+        <div class="col-9">
+              <nav class="navbar bg-body-tertiary">
+                <div class="container-fluid">
+                  <a class="navbar-brand" href="#">
+                    <img id="dimg_oqyAZ6qDFNKrwbkPwOuZqQo_269" src="data:image/png;base64,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" class="YQ4gaf" height="225" style="object-position:52% 47%" width="225" alt="Instagram Logo Vector Art, Icons, and ..." data-csiid="oqyAZ6qDFNKrwbkPwOuZqQo_21" data-atf="5">
+                       Instagram
+                  </a>
+                </div>
         </div>
-      </nav>
-    <div class="container">
-        <div class="header">
-            <div class="left-header">
+        <div class="col-3">
+                <div class="d-grid d-md-flex justify-content-md-end">
+                  <button type="button" class="btn btn-success me-md-2 data-bs-toggle = "modal" data-bs-target="#staticBackdrop">Create A New Post</button>
+                  <button type="button" class="btn btn-secondary dropdown-toggle">
+                    <span class="material-symbols-outlined">
+                      settings
+                    </span>
+                  </button>
+                </div>
             </div>
-            <div class="right-header">
-            </div>
+              </nav>
         </div>
-        <div class="buttons"></div>
-        <div class="images"></div>
-    </div>
+      <button>button</button>
+      <button>button</button>
+      </div> 
+  
+        
     
 </body>
 </html>
